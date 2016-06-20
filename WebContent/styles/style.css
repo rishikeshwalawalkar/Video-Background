@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+/* Put your css in here */
+
+h1 {
+  color: red;
+}
+
+form{
+  width:80%;
+  font-family:"sans-serif", "verdana";
+  font-size:14;
+  
+  float:inherit;
+}
+input{
+  
+}
+button{
+  background-color:green;
+  text-decoration:none;
+  padding:12px 20px;
+  font-family:"sans-serif","verdana";
+  text-align:center;
+  color:white;
+  font-size:15;
+  transition-duration: 0.4s;
+  border: 2px solid grey;
+  opacity:0.8;
+}
+button:hover{
+  float:none;
+  border:5px solid green;
+}
+
+video{
+	position: fixed;
+	top:50%;
+	left:50%;
+	width:auto;
+	height:auto;
+	min-width: 100%;
+	min-height: 100%;
+	background-size:cover;
+	transition: 1s opacity;
+	z-index: -100;
+    transform: translateX(-50%) translateY(-50%);	
+}

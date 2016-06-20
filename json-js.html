@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+    <script>
+      var data = [
+
+      	{
+      		"id" : 10,
+      		"name" : "John Smith",
+      		"age" : 25,
+      		"address" : {
+      			"city" : "Edison",
+      			"state" : "NJ",
+      			"zip" : "08817"
+      		}
+      	},
+
+	
+
+      	{
+      		"id" : 15,
+      		"name" : "Robert",
+      		"age" : 30,
+      		"address" : {
+      			"city" : "Chicago",
+      			"state" : "IL",
+      			"zip" : "06625"
+      		}
+      	},
+
+	
+
+      	{
+      		"id" : 35,
+      		"name" : "Peter Parker",
+      		"age" : 35,
+      		"address" : {
+      			"city" : "NYC",
+      			"state" : "NY",
+      			"zip" : "01001"
+      		}
+      
+      	}
+
+];
+
+  
+  
+  var user = new Object();
+  user.id = 50;
+  user.name = "John Rambo";
+  user.age = 50;
+  user.address = {
+    "city" : "Piscataway",
+    "state" : "NJ",
+    "zip" : "08854"
+  };
+  
+  data.push(user);
+  
+  for(var index in data) {
+    console.log(data[index].id + "-->" + data[index].name);
+    console.log(data[index].address.city);
+  }
+      
+    </script>
+    
+  </head>
+
+  <body>
+    <h1>Hello Plunker!</h1>
+  </body>
+
+</html>
